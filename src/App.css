@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+
+  justify-content: start;
+  justify-items: center;
+  flex-direction: column;
+  background: #181f28;
+  color:whitesmoke !important;
+   background-size: cover;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* .wolf-list-group */
+.wolf-list-group-item{
+color: white;
+border: 1px solid rgb(255 255 255 / 13%);
+}
+.btn-round{
+  border-radius: 50px;
+}
+.font-size-1{
+  font-size: .84em;
+}
+
+.alert-custom{
+  color: #22bcdf;
+    background-color: #02020205;
+    border-color: #22bcdf;
+}
+.form-control{
+  background-color: #181f28 !important;
+  border: 1px solid #6c757d !important;
+  color: #6c757d;
+}
+.form-control:focus {
+  color: #6c757d;
+}
+.footer{
+color : whitesmoke !important;
+}
+.content-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 56px);
+}
+.weather_icon{
+  filter: drop-shadow(6px 6px 2px rgb(0 0 0 / 0.4));
+}

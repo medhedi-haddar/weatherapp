@@ -1,0 +1,28 @@
+.currentContent{
+    margin-bottom : 35px;
+}
+.temp > span {
+    font-weight: 700;
+    font-size: 6em;
+    line-height: normal;
+}
+
+.countryNameContent > span {
+    font-size: 2.5em;
+    font-weight: 200;
+}
+.dayName{
+    font-weight: 200;
+}
+.maxMinTemp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding-left: 13px;
+    color: #89898b;
+}
+.descriptionTemp{
+    background: #212529;
+    padding: 5px;
+}

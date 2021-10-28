@@ -1,0 +1,69 @@
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.23.0",
+    "bootstrap": "^5.1.3",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0",
+    "react-bootstrap-icons": "^1.5.0",
+    "react-cookie": "^4.1.1",
+    "react-customizable-progressbar": "^1.0.3",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-moonphase": "^1.1.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "css-loader": {
+    "version": "4.3.0",
+    "resolved": "https://registry.npmjs.org/css-loader/-/css-loader-4.3.0.tgz",
+    "integrity": "sha512-rdezjCjScIrsL8BSYszgT4s476IcNKt6yX69t0pHjJVnPUTDpn4WfIpDQTN3wCJvUvfsz/mFjuGOekf3PY3NUg==",
+    "requires": {
+      "camelcase": "^6.0.0",
+      "cssesc": "^3.0.0",
+      "icss-utils": "^4.1.1",
+      "loader-utils": "^2.0.0",
+      "postcss": "^7.0.32",
+      "postcss-modules-extract-imports": "^2.0.0",
+      "postcss-modules-local-by-default": "^3.0.3",
+      "postcss-modules-scope": "^2.2.0",
+      "postcss-modules-values": "^3.0.0",
+      "postcss-value-parser": "^4.1.0",
+      "schema-utils": "^2.7.1",
+      "semver": "^7.3.2"
+    }
+  }
+}

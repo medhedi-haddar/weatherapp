@@ -1,0 +1,32 @@
+.hourly_item{
+    background :#212529;
+    position: relative;
+}
+.hourly_item:hover,
+.hourly_item:first-child:hover{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(171 171 171) 52%, rgba(255,255,255,1) 100%);    color: #222831 !important;
+    box-shadow: 0 0 40px -5px rgb(0 0 0 / 20%);
+    cursor: pointer !important;
+    
+}
+/* .hourly_item:hover {} */
+.hourly_item:first-child{
+    background: #2c3136 ;
+}
+.hourly_item:first-child:before {
+    color: #768599;
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 0;
+    background: #768599;
+  }
+
+.descriprion{
+    font-size: 0.8em;
+}
+.hourly_hour{
+    font-size: 9px !important;
+}
