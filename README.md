@@ -1,12 +1,12 @@
 
 # React Weather App v 2.0
 
-> current forecast
-> Hourly forecast
-> Dayly forecast
+- **current forecast**
+- **Hourly forecast**
+- **Dayly forecast**
 
 
-[demo](https://weatherapp-wolf-2.netlify.app/) 
+[demo](https://weatherapp-wolf-v2.netlify.app/) 
 
 
 # Light Theme
@@ -25,3 +25,7 @@
 ## Author
 
 Managed by [@medhedi-haddar](https://github.com/medhedi-haddar/).
+
+<p>
+  a href="mailto:medhedi.haddar@gmail.com?subject=Contact%20from%20weather%20app%20v2.0%20project" >medhedi.haddar@gmail.com</a>
+<p/>
