@@ -7,3 +7,6 @@
 
 [demo](https://weatherapp-wolf-2.netlify.app/) 
 
+![](./public/mockup-light-theme.png =100x20)
+
+![](./public/mockup-light-theme.png =100x20)
