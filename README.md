@@ -6,7 +6,7 @@
 - **Dayly forecast**
 
 
-[demo](https://weatherapp-wolf-v2.netlify.app/) 
+[demo](https://weatherapp-v2-wolf.netlify.app/) 
 
 
 # Light Theme
