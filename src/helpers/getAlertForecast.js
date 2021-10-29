@@ -1,9 +1,8 @@
  import moment from 'moment';
-import 'moment/locale/fr'
-moment.locale('fr');
+import 'moment/locale/uk'
+moment.locale('uk');
 
 const getAlertForecast = alertForecast => {
-    // console.log('hello: ' + alertForecast);
     if(alertForecast){
         return{
             sender_name : alertForecast.sender_name,

@@ -1,21 +1,25 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import { BsGithub } from "react-icons/bs";
+import { BsGithub,BsLinkedin } from "react-icons/bs";
+import { IconButton, Button } from '@material-ui/core';
+
 const Footer = () => {
     return (
-        <Container fluid className="bg-dark p-5 footer">
+        <Container fluid className="p-5 footer">
             <Row className="justify-content-md-center"  >
-               <Col className="text-start" xs lg="3">
+               <Col >
                     <p>
-                    This project was developed on react.js
+                        This Web-App is created with React.js
                     </p>
                     <p>
-                        <small>medhedi.haddar@gmail.com</small>
+                        <Button className="link" href="mailto:medhedi.haddar@gmail.com?subject=Contact%20from%20weather%20app%20v2.0%20project"><small>medhedi.haddar@gmail.com</small></Button>
                     </p>
-               </Col> 
-               <Col className="text-end" xs lg="3">
-                <a href="https://github.com/medhedi-haddar/weatherapp" target="_blank"><BsGithub size={30}/></a>
-                
+                    <IconButton href="https://github.com/medhedi-haddar/weatherapp" color="primary" target="_blank" aria-label="GitHub" >
+                    <BsGithub size={30} className="footer-icon"/>
+                </IconButton>
+                <IconButton href="https://www.linkedin.com/in/med-hedi-haddar" color="primary" target="_blank" aria-label="GitHub" >
+                    <BsLinkedin size={30} className="footer-icon"/>
+                </IconButton>
                </Col> 
             </Row>
         </Container>

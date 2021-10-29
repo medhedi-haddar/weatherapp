@@ -4,8 +4,8 @@ import { Container } from '@material-ui/core';
 const BienveunMessage = () => {
     return (
         <Container className="p-5" >
-            <h1>Bienvenue</h1>
-            <p>Selectionner une ville dans la barre de recherche</p>
+            <h1>Welcome</h1>
+            <p>Select a city in the search bar</p>
       </Container>
     )
 }

@@ -1,6 +1,6 @@
 import moment from 'moment';
-import 'moment/locale/fr'
-moment.locale('fr');
+import 'moment/locale/uk'
+moment.locale('uk');
 
 const getDailyForecast = daylyforecast => 
 

@@ -1,9 +1,7 @@
 import React from 'react';
 
-import styles from './Loader.module.css';
-
 const Loader = () => (
-    <div className={styles.box}>
+    <div className="box">
         <svg
             version="1.1"
             id="Layer_1"

@@ -20,7 +20,7 @@ const useForecast = () => {
     
     const getCurrentLocationData = async (location) =>{
         try {
-            const allData = await axios(`${BASE_URL}/weather?q=${location}&lang=fr&units=metric&appid=${API_KEY}`);
+            const allData = await axios(`${BASE_URL}/weather?q=${location}&units=metric&appid=${API_KEY}`);
             
             const data = allData.data;
             return {data};
@@ -31,7 +31,7 @@ const useForecast = () => {
 
     const getDetailLocationData = async (lat,lon) =>{
         try {
-            const detailData = await axios(`${BASE_URL}/onecall?units=metric&lat=${lat}&lon=${lon}&lang=fr&exclude=minutely&appid=${API_KEY}`);
+            const detailData = await axios(`${BASE_URL}/onecall?units=metric&lat=${lat}&lon=${lon}&exclude=minutely&appid=${API_KEY}`);
 
             const data = detailData;
         return {data};
@@ -99,7 +99,6 @@ const useForecast = () => {
             return;
         }      
     }
-    console.log(forecast);
       return {
         isError,
         isLoading,

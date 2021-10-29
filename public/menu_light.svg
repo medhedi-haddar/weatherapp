@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="75" viewBox="0 0 100 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #292d30;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Rectangle_arrondi_1_copie_2" data-name="Rectangle arrondi 1 copie 2" class="cls-1" d="M13.5,4h74a4.5,4.5,0,0,1,0,9h-74A4.5,4.5,0,0,1,13.5,4Zm0,29h74a4.5,4.5,0,0,1,0,9h-74A4.5,4.5,0,0,1,13.5,33Zm0,29h74a4.5,4.5,0,0,1,0,9h-74A4.5,4.5,0,0,1,13.5,62Z"/>
+</svg>

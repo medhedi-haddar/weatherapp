@@ -8,17 +8,17 @@ import DetailCurrentForecast from '../DetailCurrentForecast/DetailCurrentForecas
 
 
 const Forecast = ({forecast}) => (
-    <div className="container pt-5 pb-5">
+    <div>
         <CurrentForecast {...forecast.currentForecast}/>
         { Object.keys(forecast.alertsForecast).length > 0 &&  <AlertForecast {...forecast.alertsForecast}/> } 
-        <div>
+        <div className="mb-5">
             <HourlyForecast hourlyforecast={forecast.hourlyForecast}/>
         </div>
-        <div>
+        <div className="mb-5">
             <DaylyForecast daylyForecast={forecast.daylyForecast}/>
         </div>
     
-        <div>
+        <div className="mb-5">
             <DetailCurrentForecast {...forecast.detailCurrentForecast} />
         </div>
     </div>

@@ -21,6 +21,7 @@
     "react-icons": "^4.3.1",
     "react-moonphase": "^1.1.1",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
