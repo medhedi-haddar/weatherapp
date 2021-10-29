@@ -1,70 +1,119 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Weather App v 2.0
 
-## Available Scripts
+> current forecast
+> Hourly forecast
+> Dayly forecast
 
-In the project directory, you can run:
+[![NPM](https://img.shields.io/npm/v/react-scroll-horizontal.svg)](https://www.npmjs.com/package/react-scroll-horizontal)
 
-### `yarn start`
+[demo](http://hew.github.io/react-scroll-horizontal) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install --save react-scroll-horizontal
+```
 
-### `yarn test`
+## How it Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Feed `<HorizontalScroll>` one child, or many children.
+So long as they have a static width, this component will
+take care of the rest. **Note: the width of the children must
+be greater than the width of the `<HorizontalScroll>`**
 
-### `yarn build`
+___
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm i react-scroll-horizontal
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```jsx
+  <HorizontalScroll
+    pageLock      = { bool }
+    reverseScroll = { bool }
+    style         = { object }
+    config        = {{ stiffness: int, damping: int }}
+    className     = { string }
+    animValues    = { int }
+    >
+     { children }
+  </HorizontalScroll>
 
-### `yarn eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Props
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* `pageLock`       - Adds a `lock__` class to the HTML body
+* `reverseScroll`  - Reverses the scroll direction
+* `style`          - Pass a style object through to parent div
+* `config`         - Passes a spring config object to React Motion
+* `className`      - Classnames to pass into the component
+* `animValues`     - Emulate scroll by passing a delta value
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Gotchas
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Child item(s) must be px/em/vw - no percentages (yet)
+* Flexbox weirdness in IE
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Arbitrary Parent/Child Widths Example
+```jsx
+import React, { Component } from 'react'
+import HorizontalScroll from 'react-scroll-horizontal'
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+class ScrollingHorizontally extends Component {
+  render() {
+    const child   = { width: `30em`, height: `100%`}
+    const parent  = { width: `60em`, height: `100%`}
+    return (
+      <div style={parent}>
+        <HorizontalScroll>
+            <div style={child} />
+            <div style={child} />
+            <div style={child} />
+        </HorizontalScroll>
+      </div>
+    )
+  }
+}
+```
+### Full Width Example
+```js
+import React, { Component } from 'react'
+import HorizontalScroll from 'react-scroll-horizontal'
 
-### Code Splitting
+class ScrollingHorizontally extends Component {
+  render() {
+    const child = { width: `300em`, height: `100%`}
+    return (
+      <body>
+        <HorizontalScroll>
+          <div style={child} />
+        </HorizontalScroll>
+      </body>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    )
+  }
+}
+```
 
-### Analyzing the Bundle Size
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Normalize mouse delta values (see: [#1](https://github.com/hew/react-scroll-horizontal/issues/1))
+* Implement tests ✨
+* Perf optimizations
+* Ability to swap out animation engines (maybe)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Want to help out? Great!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Sites/Apps using React Scroll Horizontal
 
-### Deployment
+[ieaseMusic](https://github.com/trazyn/ieaseMusic)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+MIT © [hew](https://github.com/hew)
